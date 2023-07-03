@@ -155,7 +155,7 @@ A commit is a full snapshot of what was staged from your directory at the time o
 Most of the time you don't want to reverse back to an earlier commit. Instead you just want to compare the differences between commits. We can do that with the `diff` command. You can specify two SHAs that you would like to compare, or you can use the HEAD variable which points to the top of the commit change. To refer to earlier commits you just add `~` and the numerical distance from head that you want to reference. In this case we will compare HEAD and HEAD~1.
 
 ```sh
-➜  git diff HEAD HEAD~1
+➜  git diff HEAD~1 HEAD
 ```
 
 ```diff
